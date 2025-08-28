@@ -10,7 +10,7 @@ This repository contains 3 programming projects for CIS 1440 that explore JavaSc
 
 - [Project 2 ❌⭕ — Tic-Tac-Toe Game](./pj2)  
   An interactive tic-tac-toe game built with HTML, CSS, and JavaScript. Supports Player vs Player or Player vs Computer, win detection, restart, and game timer.
-  [Screenshots](./pj2/javascript%202proj%20tikitakito.docx)
+  [Screenshots](./pj2/javascript%202proj%20tikitakito.pdf)
 
 - [Project 3 🌐 — Web App with API Integration](./pj3)  
   A custom-themed website using HTML, CSS, and JavaScript. Includes styled UI, image rollovers, and live data fetching from an API (e.g., JSONPlaceholder or other).
