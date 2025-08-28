@@ -1,0 +1,13 @@
+
+/*when scrren is smaller than 1200, we want the desktop nav disapear */
+@media screen and (max-width: 1000px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    #menu-links.open{
+        display: block;
+    }
+}

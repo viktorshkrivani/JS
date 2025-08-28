@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueri.css">
+</head>
+<body>
+    
+    <audio id="bg-music" autoplay style="display:none;">
+        <source src="assets/En la vida todo cambia - Bad bunny (320 kbps).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <script>
+        // Check if audio should be played or not
+        if(localStorage.getItem('playAudio') === 'true') {
+          document.getElementById('bg-music').play();
+        }
+      
+        // Add event listener to play/pause audio on click
+        document.getElementById('bg-music').addEventListener('click', function() {
+          if(this.paused) {
+            this.play();
+            localStorage.setItem('playAudio', 'true');
+          } else {
+            this.pause();
+            localStorage.setItem('playAudio', 'false');
+          }
+        });
+      </script>
+
+<section id="wsu">
+    <div class ="section__text">
+      <p class="section__text__p1">Transfering to</p>
+      <h1 class="title">Wayne State University </h1>
+      <p class="section__text__p2">Computer Science</p>
+      <div class="btn_container">
+      <button class="btn btn-color-3" onclick="location.href='https://wayne.edu/'">
+      More about Wayne
+      </button>
+      </div>
+    </div>
+</section>
+
+<section id="lastone">
+    <p class="section__text__p3">Classes that I took in</p>
+    <h1 class="titles2">Previews Semester</h1>
+    <div class="skills-details-container1">
+      <div class="about-containers1">
+        <div class="details-container color-container">
+          <div class="article-container">
+          <img src="/assets/net1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Networking</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://myocc.oaklandcc.edu/Student/Student/Courses/Search?CourseIds=17182'">
+            OCC Description
+          </button>
+          <p>
+            I really liked my networking class because the teacher made everything easy to understand. It was my first time learning about networking, and the class became one of my favorites. The teacher explained everything so well that it made me interested in learning more about it. Even now, I still remember everything I learned from that class, including topics like subnets.</p>
+
+
+          
+        </div>
+      </div>
+        <div class="details-container color-container1">
+          <div class="article-container">
+          <img src="/assets/db1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Database</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://myocc.oaklandcc.edu/Student/Student/Courses/Search?CourseIds=17180'">
+            OCC Description
+          </button>
+          <p>
+            I liked studying databases because I was introduced to Oracle, which made it easier for me to understand complex concepts. Working with Oracle's user-friendly interface, named "Alex," simplified the learning process and allowed me to grasp database principles more effectively, fostering my enthusiasm for the subject.</p>
+
+
+         
+        </div>
+      </div>
+        <div class="details-container color-container1">
+          <div class="article-container">
+          <img src="/assets/j1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Java</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://myocc.oaklandcc.edu/Student/Student/Courses/Search?CourseIds=17081'">
+            OCC Description
+          </button>
+          <p>
+            I enjoyed Java class because the professor made us do projects every week, which not only solidified my understanding of Java but also boosted my confidence in coding. This hands-on approach made me realize the practical applications of Java, ultimately leading to a genuine appreciation for the language.</p>
+
+
+          
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+  <section id="previewsclasses">
+    <p class="section__text__p3">Oakland Community College</p>
+    <h1 class="titles2">Last Semmester</h1>
+    <div class="skills-details-container1">
+      <div class="about-containers1">
+        <div class="details-container color-container">
+          <div class="article-container">
+          <img src="/assets/c1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Calculus 1</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://myocc.oaklandcc.edu/Student/Student/Courses/Search?keyword=mat+1730'">
+            OCC Description
+          </button>
+          <p>
+            I wanted to take Calculus 1 because it's crucial for my continuing education. It opens up physics and many other classes, and it's a key requirement for advancing at Wayne State. I'm looking forward to excelling in this class and building a strong foundation for my academic journey.</p>
+
+          
+        </div>
+      </div>
+        <div class="details-container color-container1">
+          <div class="article-container">
+          <img src="/assets/en1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">English</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://myocc.oaklandcc.edu/Student/Student/Courses/Search?keyword=eng+2200'">
+            OCC Description
+          </button>
+          <p>
+            
+This English class, being a communication class, presents a challenge for me as an F1 student. However, I'm eager to embrace it. English proficiency is vital for my journey to Wayne State, and mastering this class will significantly contribute to my success there.</p>
+
+          
+        </div>
+      </div>
+        <div class="details-container color-container1">
+          <div class="article-container">
+          <img src="/assets/an1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Android Dev</h2>
+        <div class="btn-container2">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://myocc.oaklandcc.edu/Student/Student/Courses/Search?keyword=cis+2818'">
+            OCC Description
+          </button>
+          <p>
+            About this class, it will be my last one for my associate's degree, marking a significant milestone in my journey towards obtaining a degree in America. I'm excited about this accomplishment. Understanding the importance of mobile apps in today's world further motivates me to excel in this class and continue pursuing my goals with enthusiasm.</p>
+
+          
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="wayne classes">
+    <p class="section__text__p3">To Be Continued at</p>
+    <h1 class="titles2">Wayne State Univeristy</h1>
+    <div class="skills-details-container2">
+      <div class="about-containers1">
+        <div class="details-container color-container">
+          <div class="article-container">
+          <img src="/assets/wsulogo.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Comming Soon...</h2>
+        <div class="c-container"></div>
+       
+      </div>
+        <div class="details-container color-container1">
+          <div class="article-container">
+          <img src="/assets/wsulogo.png" alt="wsul" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Comming Soon...</h2>
+        <div class="c-container">
+          
+        </div>
+      </div>
+        <div class="details-container color-container1">
+          <div class="article-container">
+          <img src="/assets/wsulogo.png" alt="wsul" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Comming Soon...</h2>
+        <div class="c-container">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

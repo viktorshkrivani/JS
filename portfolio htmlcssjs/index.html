@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueri.css">
+</head>
+<body>
+  
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="/assets/logo-e-re.png" alt="Viktor Shkrivani Logo">
+        </div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#int">Interests</a></li>
+            <li><a href="#future">Future</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="/assets/logo-e-re.png" alt="Viktor Shkrivani Logo">
+        </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#int" onclick="toggleMenu()">Interests</a></li>
+            <li><a href="#future" onclick="toggleMenu()">Future</a></li>
+          </div>
+        </div>
+      </nav>
+
+      <audio id="bg-music" autoplay style="display:none;">
+        <source src="assets/En la vida todo cambia - Bad bunny (320 kbps).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <script>
+        // Check if audio should be played or not
+        if(localStorage.getItem('playAudio') === 'true') {
+          document.getElementById('bg-music').play();
+        }
+      
+        // Add event listener to play/pause audio on click
+        document.getElementById('bg-music').addEventListener('click', function() {
+          if(this.paused) {
+            this.play();
+            localStorage.setItem('playAudio', 'true');
+          } else {
+            this.pause();
+            localStorage.setItem('playAudio', 'false');
+          }
+        });
+      </script>
+
+      
+      
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Untitled-1.png" alt="viktorshkrivani profile">
+        </div>
+        <div class ="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Viktor Shkrivani</h1>
+          <p class="section__text__p2">Software Engineer</p>
+          <div class="btn_container">
+            <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Viktor SH DA Resume.pdf')">
+          Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='mailto:shkrivani@gmail.com'">
+          Contact Info
+          </button>
+          </div>
+          <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+            class="icon"  onclick="location.href='https://www.linkedin.com/in/viktor-shkrivani/'" >
+            <img src="./assets/github.png" alt="My GitHub profile"
+            class="icon"  onclick="location.href='https://github.com/viktorshkrivani'">
+            <img src="./assets/instagram (1).png" alt="My Instagram profile"
+            class="icon"  onclick="location.href='https://www.instagram.com/viktorshkrivani/'">
+          </div>
+        </div>
+    </section>
+ 
+    <section id="about">
+      <p class="section__text__p3">Get To Know More</p>
+      <h1 class="titles2">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container1">
+          <img
+            src="./assets/whiteas.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/quality.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3>Skills</h3>
+              <p>1+ years <br />Software Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Associate Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              My name is Viktor, and I'm a software engineer with one year of experience. Currently enrolled at Oakland Community College, I am Albanian and passionate about advancing my career in software engineering. Over the past year, I've honed my skills in developing scalable web applications and implementing machine learning algorithms. My goal is to further specialize in areas such as cloud computing and cybersecurity, leveraging my expertise to tackle complex challenges and make a tangible impact in the tech industry. I am dedicated to continuous learning and staying updated with the latest advancements in technology. With a focus on excellence and a commitment to innovation, I aim to excel in my career and contribute meaningfully to the field of software engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/right-arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p3"> Explore My</p>
+      <h1 class="titles2">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Software Engineering</h2>
+            <div class="article-container">
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Student/Courses/Search?keyword=cis+2515">Oracle Cloud Infrastructure</a></h3>
+                  <p>Intermadiate</p>
+                </div>
+              </article>
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Courses/Search?keyword=cis%202353">Data Structures</a></h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Courses/Search?keyword=cis+1200">DataBase</a></h3>
+                  <p>Intermadiate</p>
+                </div>
+              </article>
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Courses/Search?keyword=cis+2151">OOP JAVA</a></h3>
+                  <p>Intermadiate</p>
+                </div>
+              </article>
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Courses/Search?keyword=cis+2252">OOP C++</a></h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Cyber Security</h2>
+            <div class="article-container">
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Student/Courses/Search?CourseIds=17182">Networking</a></h3>
+                  <p>Intermadiate</p>
+                </div>
+              </article>
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Student/Courses/Search?CourseIds=17919">Cryptography</a></h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Student/Courses/Search?CourseIds=17918">Data Security</a></h3>
+                  <p>Intermadiate</p>
+                </div>
+              </article>
+              <article>
+                <a href="https://example.com"></a>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Student/Courses/Search?CourseIds=17203">Systm Analysis & Design (UML)</a></h3>
+                  <p>Intermadiate</p>
+                </div>
+              </article>
+              <article>
+                <img src="/assets/correct.png" alt=" Skills icon"
+                class="icon" />
+                <div class="into-article">
+                  <h3><a href="https://myocc.oaklandcc.edu/Student/Student/Courses/Search?CourseIds=17214">Windows Server Administration</a></h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/right-arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#int'"
+      />
+
+
+    </section>
+
+  <section id="int">
+    <p class="section__text__p3">Browse My Recent</p>
+    <h1 class="titles2">Intrests</h1>
+    <div class="skills-details-container1">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+          <img src="/assets/movies1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Movies</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://www.imdb.com/title/tt11389872/'">
+            Favorite Movie
+          </button>
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://www.independent.co.uk/arts-entertainment/films/features/movie-facts-fun-trivia-b1877408.html'">
+            10 Movie Facts
+          </button>
+        </div>
+      </div>
+        <div class="details-container color-container1">
+          <div class="article-container">
+          <img src="/assets/sports1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Sports</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://www.fcbarcelona.com/en/club/history/decade-by-decade'">
+            Why Barca
+          </button>
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://www.youtube.com/watch?v=n0aGGicVz1Q'">
+            Decade 10-19 
+          </button>
+        </div>
+      </div>
+        <div class="details-container color-container1">
+          <div class="article-container">
+          <img src="/assets/podcast1.png" alt="poster 1" class="int-img">
+        </div>
+        <h2 class="skills-sub-title poster-title">Podcasts</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://podcasts.apple.com/us/podcast/part-1-the-empire-builders/id1656114483?i=1000593401489'">
+            In My Free Time
+          </button>
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='https://www.youtube.com/@entreprenuership_opportunities'">
+            Must Listen
+          </button>
+        </div>
+      </div>
+    </div>
+    <img
+    src="./assets/right-arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#future'"
+  />
+
+
+  </section>
+
+  <section id="future">
+    <p class="section__text__p3">Goals for the</p>
+    <h1 class="titles2">Future</h1>
+    <div class="skills-details-container1">
+      
+      <div class="future-container-img">
+        <img src="/assets/chevron.png" alt=" Future icon"
+        class="icon" />
+      </div>
+        <div class=" color-container1">
+         
+          
+        <div class="btn-container1">
+          <button class="btn btn-color-2 int-btn"  onclick="location.href='courses.html'">
+            LET'S GO
+          </button>
+          </div>
+          
+          
+
+          
+        </section>
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#int">Interests</a></li>
+                <li><a href="#future">Future</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2024 Viktor Shkrivani. </p>
+        </footer>
+  </section>
+    <script src="script.js"></script>
+</body>
+</html>
