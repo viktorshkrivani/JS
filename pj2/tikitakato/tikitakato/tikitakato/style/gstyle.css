@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f0f8ff;
+    position: relative;
+}
+
+img#leftImage {
+    position: absolute;
+    top: 140px;
+    left: 210px;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img#leftImage:hover {
+    transform: scale(2.2);
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #5d5d5d;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif; /* Use the custom font */
+    background-color: #f0f8ff; /* Light background color */
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem; /* Slightly smaller than the index page */
+    color: #333; /* Dark text color */
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem; /* Smaller text */
+    color: #5d5d5d; /* Gray text color */
+    font-weight: 300; /* Thin text */
+    margin-bottom: 2rem;
+}
+

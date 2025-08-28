@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+header span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+main {
+  padding: 40px 60px;
+  max-width: 680px;
+  margin: 0 auto;
+  flex: 1; /* Allow the main content to grow and push the footer down */
+}
+
+main h3.intro-heading {
+  font-size: 21px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+main h3.contact-heading {
+  font-size: 23px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: normal;
+}
+
+main p.intro {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 14px;
+  color: #555;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+}
+
+main p.contact {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -25px;
+  color: #9f9f9f;
+}
+
+main p.thanks {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+form input::placeholder {
+  color: #bdc8d4;
+}
+
+form input {
+  width: 100%;
+  max-width: 270px;
+  padding: 20px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form button {
+  width: 100%;
+  max-width: 315px;
+  padding: 20px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  color: white;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+form button:hover {
+  background-color: #bdc8d4;
+}
+
+footer .social-links {
+  text-align: center;
+  margin-top: -115px;
+  margin-bottom: 90px;
+  font-size: 11px;
+}
+
+footer .social-links a {
+  text-decoration: none;
+  color: #134e8e; /* Blue color for the link */
+  transition: color 0.3s; /* Smooth transition on hover */
+  margin-right: 10px;
+}
+
+footer .social-links a:hover {
+  color: #bdc8d4; /* Darker blue on hover */
+}
+
+footer {
+  text-align: center;
+  margin-top: 29px;
+  font-size: 14px;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a.back-to-home {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+footer a.back-to-home:hover {
+  color: #bdc8d4;
+}
+

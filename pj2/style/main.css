@@ -1,0 +1,82 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    padding: 10px;
+    width: 600px; /* Reduced width */
+    background-color: #ffffff;
+    border: 4px solid #000000; /* Reduced border thickness */
+    border-radius: 10px; /* Reduced border radius */
+}
+
+.mode-selection {
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 16px; /* Reduced font size */
+}
+
+#turn-display {
+    font-size: 20px; /* Reduced font size */
+    color: #000000;
+}
+
+#timer_container {
+    margin: 5px auto;
+    padding: 3px;
+    width: 620px; /* Reduced width */
+    background-color: #d7d7d7;
+    border: 4px solid #000000; 
+    border-radius: 15px; /* Reduced border radius */
+    color: #000000;
+    font-size: 18px; /* Reduced font size */
+    text-align: center;
+}
+
+.pretty_button {
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    font-size: 14px; /* Reduced font size */
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 15px; /* Reduced padding */
+    margin: 5px;
+    border-radius: 4px; /* Reduced border radius */
+    cursor: pointer;
+}
+
+hr {
+    margin: auto 0;
+    background: #000000;
+    height: 4px; /* Reduced height */
+}
+
+/* Table styles */
+td {
+    width: 130px; /* Reduced width */
+    height: 130px; /* Reduced height */
+    text-align: center;
+    vertical-align: middle;
+}
+
+table {
+    margin: 5px auto;
+    border-collapse: collapse;
+}
+
+.vert {
+    border-left: 3px solid black; /* Reduced border thickness */
+    border-right: 3px solid black; /* Reduced border thickness */
+}
+
+.hori {
+    border-top: 3px solid black; /* Reduced border thickness */
+    border-bottom: 3px solid black; /* Reduced border thickness */
+}
+
+img {
+    width: 100px; /* Reduced image size */
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0; 
+    font-family: 'Poppins', sans-serif; /* Updated font */
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+header {
+    padding: 22px;
+    text-align: center; /* Center align text */
+}
+
+header span {
+    font-size: 14px; 
+    font-weight: normal; 
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 10px;
+    max-width: 100%; /* Ensure grid doesn't overflow */
+    height: 100%; /* Fit within the available space */
+    overflow: hidden; /* Prevent grid overflow */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(3, 1fr); /* Three rows */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.grid-item {
+    width: 100%; /* Full width of the grid cell */
+    max-width: 400px; /* Adjust maximum width for columns */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    background-color: #f9f9f9; /* Light background for empty state */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clip overflowing content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.grid-item iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove iframe border */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-rows: auto; /* Adjust rows automatically */
+    }
+}
+
+#time {
+    display: block;
+    margin: 13px auto;
+    padding: 10px 20px; /* Reduced padding */
+    font-size: 6em; /* Smaller font size */
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Slightly smaller border radius */
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif; /* Apply the new font to the time display */
+}
+
+footer {
+    text-align: center; 
+    font-size: 14px; 
+    padding: 10px 0;
+    position: absolute; /* Fix footer at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s; 
+}
+
+footer a:hover {
+    color: #bdc8d4; 
+}
+

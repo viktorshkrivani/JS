@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars */
+    background: url('../images/Weather Clouds GIF by Feliks Tomasz Konczakowski.gif') no-repeat center center fixed; /* Set the GIF as the background */
+    background-size: cover; /* Ensure the GIF covers the entire screen */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', Arial, sans-serif; /* Use the custom font */
+    position: relative;
+}
+
+main {
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensure the text and character are above the background */
+}
+
+h1 {
+    font-size: 4rem; /* Large text */
+    color: #333; /* Dark text color */
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem; /* Smaller text */
+    color: #5d5d5d; /* Gray text color */
+    font-weight: 300; /* Thin text */
+    margin-bottom: 2rem;
+}
+
+#fallingCharacter {
+    position: absolute;
+    top: 50%; /* Keep the character in the center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 150px; /* Adjust the size of the character */
+    z-index: 2; /* Ensure the character is above the background */
+    animation: rotateAndChange 1s linear infinite; /* Add rotation and color change animation */
+}
+#fallingCharacter {
+    position: absolute;
+    top: 50%; /* Keep the character in the center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 150px; /* Adjust the size of the character */
+    z-index: 2; /* Ensure the character is above the background */
+    animation: rotateAndChange 1s linear infinite; /* Add rotation and color change animation */
+}
+
+/* Style for the input text box */
+#answerInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #5d5d5d; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease;
+}
+
+#answerInput:focus {
+    border-color: #007bff; /* Blue border on focus */
+}
+
+/* Style for the submit button */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: #d4e9ff; /* Blue background */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #b1d7ff; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Rotation, color change, and opacity animation for the character */
+@keyframes rotateAndChange {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        filter: hue-rotate(0deg); /* Original color */
+        opacity: 1; /* Full opacity */
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg);
+        filter: hue-rotate(180deg); /* Change color */
+        opacity: 0.8; /* Slightly reduced opacity */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        filter: hue-rotate(360deg); /* Back to original color */
+        opacity: 1; /* Full opacity */
+    }
+}

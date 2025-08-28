@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6; /* Improve readability */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+header {
+  padding: 20px;
+  text-align: center; /* Center align header text */
+}
+
+header span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+main {
+  padding: 50px 70px; /* Add padding around content */
+  max-width: 680px; /* Limit content width */
+  margin: 0 auto; /* Center content */
+  flex: 1; /* Push footer to the bottom */
+}
+
+main h1 {
+  font-size: 2.2em; /* Larger font size for heading */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+main p {
+  margin-bottom: 20px; /* Space between paragraphs */
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 10px 0;
+  position: relative; /* Ensure footer stays at the bottom */
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333;
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+footer a:hover {
+  color: #bdc8d4; /* Change color on hover */
+  font-size: 19px; /* Slightly enlarge font on hover */
+}

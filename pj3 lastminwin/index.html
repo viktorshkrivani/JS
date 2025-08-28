@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Last Minute Win</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div class="top-nav">
+    <div class="nav-left">
+      <a href="about.html">about</a>
+      <a href="shop.html">shop</a>
+      <a href="nonstop.html">nonstop</a>
+    </div>
+    <div class="nav-center">
+      <span class="logo">lastminutewin</span>
+    </div>
+    <div class="nav-right">
+      <a href="subscribe.html">subscribe</a>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <section class="news-container">
+      <h2>NEWS</h2>
+    </section>
+    <section class="games-container">
+      <h2>TODAY'S GAME</h2>
+      <div id="games-list"></div>
+      <div class="league-section">
+        <h4>UEFA CHAMPIONS LEAGUE</h4>
+        <div id="uefa-champions-league" class="games-list"></div>
+        <div class="more-link">scroll for more ...</div>
+      </div>
+      <div class="league-section">
+        <h4>ITALIAN SERIE A</h4>
+        <div id="italian-serie-a" class="games-list"></div>
+      </div>
+      <div class="league-section">
+        <h4>ENGLISH PREMIER LEAGUE</h4>
+        <div id="english-premier-league" class="games-list"></div>
+      </div>
+      <div class="league-section">
+        <h4>FRENCH LIGUE 1</h4>
+        <div id="french-ligue-1" class="games-list"></div>
+      </div>
+      <div class="league-section">
+        <h4>GERMAN BUNDESLIGA</h4>
+        <div id="german-bundesliga" class="games-list"></div>
+      </div>
+      <div class="league-section">
+        <h4>AUSTRIAN BUNDESLIGA</h4>
+        <div id="austria-league" class="games-list"></div>
+      </div>
+      <div class="league-section">
+        <h4>SEGUNDA DIVISIÓN DE ESPAÑA</h4>
+        <div id="segunda-division" class="games-list"></div>
+      </div>
+      
+    </section>
+    <section class="chico-container">
+      <h2>HELLO I'M CHICO</h2>
+      <ul>
+        <li>Suggest smart bets based on team form</li>
+        <li>Break down key stats in seconds</li>
+        <li>Spot hidden opportunities before kickoff</li>
+        <li>Help you avoid risky plays</li>
+        <li>and more ...</li>
+      </ul>
+      <p class="chico-more">Press CHICO for more.</p>
+      <img src="images/chicho.png" alt="Chico" class="chico-image">
+      <div id="textbox-container" class="textbox-container" style="display: none;">
+        <textarea placeholder="What game u want me to look up?"></textarea>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script>
+    const chicoImage = document.querySelector('.chico-image');
+    const textboxContainer = document.getElementById('textbox-container');
+
+    chicoImage.addEventListener('click', () => {
+      textboxContainer.style.display = textboxContainer.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
