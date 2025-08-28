@@ -6,11 +6,7 @@ This repository contains 3 programming projects for CIS 1440 that explore JavaSc
 
 - [Project 1 🌍 — Flags and Countries](./pj1)  
   A webpage that swaps images of flags with country maps on hover, updating the header text dynamically using JavaScript DOM manipulation.
-  [Screenshots](./pj1/screenshots/sc1.png)
-
-  [Screenshots](./pj1/screenshots/sc2.png)
-
-  [Screenshots](./pj1/screenshots/sc3.png)
+  [Screenshots](./pj1/screenshots)
 
 - [Project 2 ❌⭕ — Tic-Tac-Toe Game](./pj2)  
   An interactive tic-tac-toe game built with HTML, CSS, and JavaScript. Supports Player vs Player or Player vs Computer, win detection, restart, and game timer.
