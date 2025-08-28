@@ -23,4 +23,4 @@ As part of my **HTML class final project**, I created a personal portfolio websi
 It includes multiple pages, styled layouts, and links to showcase my coding projects.  
 
 👉 You can view the portfolio here:  
-[viktorshriv](https://viktorshkrivani444.netlify.app/)  
+[Viktor Shkrivani](https://viktorshkrivani444.netlify.app/)  
