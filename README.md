@@ -15,3 +15,12 @@ This repository contains 3 programming projects for CIS 1440 that explore JavaSc
 - [Project 3 🌐 — Web App with API Integration](./pj3)  
   A custom-themed website using HTML, CSS, and JavaScript. Includes styled UI, image rollovers, and live data fetching from an API (e.g., JSONPlaceholder or other).
   [Screenshots](./pj3%20lastminwin/SCREENSHOTS.pdf)
+
+---
+
+## HTML Portfolio — Final Project
+As part of my **HTML class final project**, I created a personal portfolio website.  
+It includes multiple pages, styled layouts, and links to showcase my coding projects.  
+
+👉 You can view the portfolio here:  
+[viktorshriv](https://viktorshkrivani444.netlify.app/)  
